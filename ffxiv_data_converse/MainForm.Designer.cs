@@ -42,7 +42,7 @@
             this.textBox_getName = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label_Name = new System.Windows.Forms.Label();
-            this.textBox_newID = new System.Windows.Forms.TextBox();
+            this.textBox_getType = new System.Windows.Forms.TextBox();
             this.label_newID = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -180,12 +180,13 @@
             this.label_Name.TabIndex = 15;
             this.label_Name.Text = "이름: ";
             // 
-            // textBox_newID
+            // textBox_getType
             // 
-            this.textBox_newID.Location = new System.Drawing.Point(309, 144);
-            this.textBox_newID.Name = "textBox_newID";
-            this.textBox_newID.Size = new System.Drawing.Size(52, 29);
-            this.textBox_newID.TabIndex = 20;
+            this.textBox_getType.Location = new System.Drawing.Point(309, 144);
+            this.textBox_getType.Name = "textBox_getType";
+            this.textBox_getType.Size = new System.Drawing.Size(52, 29);
+            this.textBox_getType.TabIndex = 20;
+            this.textBox_getType.Text = "2";
             // 
             // label_newID
             // 
@@ -199,18 +200,18 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(250, 147);
+            this.label4.Location = new System.Drawing.Point(227, 147);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(62, 21);
+            this.label4.Size = new System.Drawing.Size(90, 21);
             this.label4.TabIndex = 18;
-            this.label4.Text = "NewID:";
+            this.label4.Text = "던전 구분: ";
             // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(411, 181);
-            this.Controls.Add(this.textBox_newID);
+            this.Controls.Add(this.textBox_getType);
             this.Controls.Add(this.label_newID);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.textBox_getName);
@@ -251,7 +252,7 @@
         private System.Windows.Forms.TextBox textBox_getName;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label_Name;
-        private System.Windows.Forms.TextBox textBox_newID;
+        private System.Windows.Forms.TextBox textBox_getType;
         private System.Windows.Forms.Label label_newID;
         private System.Windows.Forms.Label label4;
     }
