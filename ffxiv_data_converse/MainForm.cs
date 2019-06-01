@@ -23,7 +23,7 @@ namespace ffxiv_data_converse
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void button_OpenFile_Click(object sender, EventArgs e)
         {
             if (file_Open.ShowDialog() == DialogResult.OK)
             {
@@ -31,9 +31,9 @@ namespace ffxiv_data_converse
             }
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void button_saveFile_Click(object sender, EventArgs e)
         {
-            if(file_Save.ShowDialog() == DialogResult.OK)
+            if (file_Save.ShowDialog() == DialogResult.OK)
             {
                 label_SaveFile.Text = file_Save.FileName;
             }
@@ -60,7 +60,7 @@ namespace ffxiv_data_converse
                 else if (order == 2)
                     return 2;
             }
-                return 0;
+            return 0;
         }
 
         private void converse()
@@ -103,7 +103,8 @@ namespace ffxiv_data_converse
                     {
                         listA.Add(values[Int32.Parse(textBox_getID.Text) - 1]);
                         listB.Add(values[Int32.Parse(textBox_getName.Text) - 1]);
-                        listC.Add(values[Int32.Parse(textBox_getType.Text) - 1]); //getType 텍스트 박스 생성필요
+                        if(textBox_getType.Enabled) // Duty의 경우
+                            listC.Add(values[Int32.Parse(textBox_getType.Text) - 1]); //getType 텍스트 박스 생성필요
                     }
                 }
                 reader.Close();
@@ -144,7 +145,7 @@ namespace ffxiv_data_converse
             textBox_getType.Text = "";
             textBox_getType.Enabled = false;
             textBox_getID.Text = "1";
-            textBox_getName.Text = "28";
+            textBox_getName.Text = "29";
         }
     }
 }

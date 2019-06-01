@@ -55,7 +55,7 @@
             this.button_OpenFile.TabIndex = 0;
             this.button_OpenFile.Text = "파일 선택";
             this.button_OpenFile.UseVisualStyleBackColor = true;
-            this.button_OpenFile.Click += new System.EventHandler(this.button1_Click);
+            this.button_OpenFile.Click += new System.EventHandler(this.button_OpenFile_Click);
             // 
             // label_OpenFile
             // 
@@ -84,7 +84,7 @@
             this.button_saveFile.TabIndex = 1;
             this.button_saveFile.Text = "경로 지정";
             this.button_saveFile.UseVisualStyleBackColor = true;
-            this.button_saveFile.Click += new System.EventHandler(this.button3_Click);
+            this.button_saveFile.Click += new System.EventHandler(this.button_saveFile_Click);
             // 
             // label_SaveFile
             // 
@@ -230,6 +230,7 @@
             this.Controls.Add(this.button_OpenFile);
             this.Font = new System.Drawing.Font("맑은 고딕", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.MaximizeBox = false;
             this.Name = "MainForm";
             this.Text = "FFXIV DATA Conversion Tool";
             this.ResumeLayout(false);
